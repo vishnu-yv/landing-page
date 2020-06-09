@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="style/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HTML Follows BEM naming conventions
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <ul class=menuitems></ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="main__hero">
+      <h1>To code and beyond!</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class">
+      <div class="landing__container">
+        <h2>THE PAST: WORLD, MEET THE INTERNET</h2>
+        <p>Looking back to the 1990’s, the Internet was a new commodity many, but not all, households and businesses began to gain access. For people living during that time, the sound of the painfully slow dial up signal connecting to the Internet is a not-so-fond memory (EEEE-AAAAAHH!!!!).
+
+Thankfully, as more people found value in the Internet, technology took off to eliminate having to use a phone line to go online and instead delivered faster connections to the World Wide Web.</p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="landing__container">
+        <h2>THE PRESENT: SNAPS, CHATS AND DOUBLE TAPS</h2>
+        <p>Fast-forward a short decade later (side note: remember VHS tapes!? The OG fast-forward? OK, moving on…).<br>
+
+Since the days of dial-up, access to the Internet is available almost everywhere. It is rare these days for consumers to go into a coffee shop, library or any place of business and not be able to access a Wi-Fi signal. If there isn’t a Wi-Fi signal in close range, most people still have access to the Internet via their cellular data connection on their smartphones and personal hotspots, no problem.</p>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="landing__container">
+        <h2>THE FUTURE: EMERGING TRENDS ON THE HORIZON</h2>
+        <p>As more existing technologies are stacked onto each other and developed into something greater, consumers and businesses alike can expect to see more opportunity with future technology. Technology will be faster, have the ability to accomplish more and everything will become more streamlined to make getting work done, easier.
+
+While we don’t have the ability to predict the future, we can offer speculations on technology’s evolution. We are constantly seeing emerging media and new trends in technology to follow. Here are a few trends to watch for in the coming years.</p>
+    </div>
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="landing__container">
+        <h2>Next</h2>
+        <p><em>Thank you for visiting my page</em></p>
+        <p></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page__footer">
+    <p>&copy Y Vishnu Vardhan</p>
+    <p><a href="mailto:vishnubabu9876@gmail.com">Touch this if you want to mail me</a>
+    <p>Content taken from  <a href="https://www.discovertec.com/blog/evolution-of-technology">This</a>
+    <button id=backbtn> <span id=button>Back to top</span>
+    </button>
+  </footer>
+
+</body>
+<script src="js/app.js"></script>
+</html>
